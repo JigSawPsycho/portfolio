@@ -89,6 +89,9 @@
   :root {
     scroll-behavior: smooth;
   }
+  .hidden {
+    transition: none;
+  }
 }
 
 body {
@@ -11017,6 +11020,26 @@ html {
   max-width: 25rem;
   border-radius: 0rem;
   overflow: hidden;
+}
+.portfolio .portfolio-item:nth-child(2) {
+  transition-delay: 200ms;
+}
+.portfolio .portfolio-item:nth-child(3) {
+  transition-delay: 400ms;
+}
+.portfolio .portfolio-item:nth-child(4) {
+  transition-delay: 600ms;
+}
+.hidden {
+  opacity: 0;
+  filter: blur(2px);
+  transform: translateX(-25%);
+  transition: all 1s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
 .portfolio .portfolio-item .portfolio-item-caption {
   position: absolute;
