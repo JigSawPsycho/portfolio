@@ -1,0 +1,33 @@
+.slideUp {
+    transition: all 0.2s;
+    transform: translateX(0px);
+}
+
+.slideUp:hover {
+    transform: translateY(-60px);
+    transition: all 0.2s;
+}
+
+.slideUp .info-card {
+    overflow-y: hidden;
+}
+
+.grow {
+    transition: all 0.2s;
+    transition-delay: 0s;
+    transform: scale(100%);
+}
+
+.grow:hover {
+    transition: all 0.2s;
+    transform: scale(105%);
+    z-index: 1;
+}
+
+.info-card .info-card-info {
+
+}
+
+.animate--easeIn {
+    transition-timing-function: ease-in;
+}
